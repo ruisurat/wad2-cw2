@@ -1,0 +1,24 @@
+{
+  "name": "cw2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon start",
+    "populate": "node db/populateDishes.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "jsonwebtoken": "^8.5.1",
+    "mustache-express": "^1.3.2",
+    "nedb": "^1.8.0",
+    "nedb-models": "^4.0.1",
+    "path": "^0.12.7"
+  }
+}

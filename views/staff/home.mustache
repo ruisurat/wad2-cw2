@@ -1,0 +1,43 @@
+<html>
+    {{>partials/head}}
+    {{>partials/staffNav}}
+    <body>
+        <div class="container-xxl py-5 bg-dark hero-header mb-5">
+                <div class="container text-center my-5 pt-5 pb-4">
+                    <h1 class="display-3 text-white mb-3">Staff Home</h1>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center;">
+            <a href="/addDish" class="btn btn-primary py-2 px-4">Add New Dish</a>
+            <br>
+            <br>
+            <hr>
+            <h2>-- Edit Dishes --</h2>
+            <h3>Drinks</h3>
+            {{#menu.drinks}}
+                {{#dishes}}
+                    <a href="/editDish/{{_id}}" class="btn btn-primary py-2 px-4">Edit {{name}}</a>
+                {{/dishes}}
+            {{/menu.drinks}}
+            <h3>Starters</h3>
+            {{#menu.starters}}
+                {{#dishes}}
+                    <a href="/editDish/{{_id}}" class="btn btn-primary py-2 px-4">Edit {{name}}</a>
+                {{/dishes}}
+            {{/menu.starters}}
+            <h3>Mains</h3>
+            {{#menu.mains}}
+                {{#dishes}}
+                    <a href="/editDish/{{_id}}" class="btn btn-primary py-2 px-4">Edit {{name}}</a>
+                {{/dishes}}
+            {{/menu.mains}}
+            <h3>Alcohol</h3>
+            {{#menu.alcohol}}
+                {{#dishes}}
+                    <a href="/editDish/{{_id}}" class="btn btn-primary py-2 px-4">Edit {{name}}</a>
+                {{/dishes}}
+            {{/menu.alcohol}}
+        </div>
+    </body>
+<html>
